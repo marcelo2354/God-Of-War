@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="index.js" defer></script>
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="logoNav">
+    <a href="#wrapper"><img src="img/godlogo.png" width="30px" height="30px"></a>
+  </div>
+
+  <nav>    
+    <ul class="opcoes"> 
+        <li><a href="#wrapper">CHARACTERS</a></li>
+        <li><a href="#container">HISTORY</a></li>
+        <li><a href="#">ORDER NOW</a></li>
+    </ul>
+</nav>
+
+<div class="wrapper">
+            
+  <video src="img/cinematic.mp4"id="video" onloadstart="this.volume=0.1"></video>
+  <button id="btn">INICIAR</button>
+  
+  <div class="content">
+      <h1>A NEW WORLD</h1>
+      <p>To begin your journey </p>
+  </div>
+</div>
+
+  <section id="characters">
+    <div class="charactersGrid1" id="charactersGrid1"><img src="img/atrus.jpg" onclick="aparecer1()"><div class="boxcontent1"><h1>teste</h1><p>span</p></div></div>
+    <div class="charactersGrid2"><img src="img/freya.jpg" onclick="aparecer2()"><div class="boxcontent2"><h1>teste</h1><p>span</p></div></div>
+    <div class="charactersGrid3"><img src="img/mimir.jpg" onclick="aparecer3()"><div class="boxcontent3"><h1>teste</h1><p>span</p></div></div>
+    <div class="charactersGrid4"><img src="img/2c650d133ad884c266a024b3e41e79ce.jpg" onclick="aparecer4()"><div class="boxcontent4"><h1>teste</h1><p>span</p></div></div>
+  </section>
+
+  <div class="titulo">  <h1>ORDER NOW</h1>
+    <P>COMPR JA</P></div>
+
+  <section id="orderNow">
+    <div class="orderNowBox">
+      <div class="orderNowBox1">
+        
+      </div>
+      <div class="orderNowBox2">
+        <br><br>
+        <input type="text" value="First Name"><br><br>
+        <input type="text" value="Last Name"><br><br>
+        <label for="country">Choose Country:</label>
+      <select id="country" name="cars">
+    <option value="volvo">Brazil</option>
+    <option value="saab">USA</option>
+    <option value="fiat">Canada</option>
+    <option value="audi">Japan</option>
+    </select>
+  <input type="submit" value="Send">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
