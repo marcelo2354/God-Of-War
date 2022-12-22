@@ -18,8 +18,11 @@ jQuery(document).ready(function(){
 
 function aparecer1(){
     let aparecer = document.querySelector(".boxcontent1");
+    let filtro = document.querySelector(".charactersGrid1 img");
+    
         if( aparecer.style.display=="block" ){
             aparecer.style.display="none";
+            filtro.style.filter ="grayscale(0)";
         }   else{
             aparecer.style.display="block"
         }
